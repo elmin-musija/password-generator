@@ -1,0 +1,90 @@
+/* CSS HEX */
+:root {
+	--jet: #353535ff;
+	--ming: #3c6e71ff;
+	--white: #ffffffff;
+	--gainsboro: #d9d9d9ff;
+	--indigo-dye: #284b63ff;
+
+	/* CSS HSL */
+	--jet: hsla(0, 0%, 21%, 1);
+	--ming: hsla(183, 31%, 34%, 1);
+	--white: hsla(0, 0%, 100%, 1);
+	--gainsboro: hsla(0, 0%, 85%, 1);
+	--indigo-dye: hsla(204, 42%, 27%, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	font-family: "Courier New", Courier, monospace;
+	background-color: var(--jet);
+}
+h1 {
+	color: var(--ming);
+	text-align: center;
+	margin: 1rem 0 2rem;
+}
+form {
+	background-color: white;
+	font-size: 2rem;
+	max-width: min(90vw, 350px);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem 3rem;
+	margin: 3rem auto;
+}
+label {
+	color: var(--indigo-dye);
+}
+input[type="submit"],
+input[type="button"] {
+	width: 100px;
+	font-size: 1.8rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid black;
+	border-radius: 0.5rem;
+}
+.password-length {
+	color: var(--indigo-dye);
+	text-align: center;
+}
+.input-range {
+	width: 100%;
+	padding-block: 0.5rem;
+	margin-inline: auto;
+	margin-bottom: 2rem;
+}
+.checkbox-container {
+	width: 100%;
+	margin-inline: auto;
+	margin-bottom: 1rem;
+}
+.generated-password {
+	color: var(--indigo-dye);
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.25;
+	text-align: center;
+	min-height: 175px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2rem;
+}
+.button-container {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+.button-container > input:hover {
+	background-color: var(--ming);
+}

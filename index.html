@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/style.css" />
+		<title>password generator</title>
+	</head>
+	<body>
+		<header></header>
+		<main>
+			<form id="form" onsubmit="return false">
+				<h1>Password Generator</h1>
+				<p class="password-length">test</p>
+				<input
+					type="range"
+					name="input-range"
+					class="input-range"
+					id="input-range"
+					min="0"
+					max="128"
+					value="12"
+				/>
+				<div class="checkbox-container">
+					<input
+						type="checkbox"
+						name="input-capital-letter"
+						id="input-capital-letter"
+						checked
+					/>
+					<label for="input-capital-letter">Capital letters: A-Z</label>
+				</div>
+				<div class="checkbox-container">
+					<input
+						type="checkbox"
+						name="input-lowercase-letter"
+						id="input-lowercase-letter"
+						checked
+					/>
+					<label for="input-lowercase-letter">Lowercase letters: a-z</label>
+				</div>
+				<div class="checkbox-container">
+					<input
+						type="checkbox"
+						name="input-number"
+						id="input-number"
+						checked
+					/>
+					<label for="input-number">Numbers: 0-9 </label>
+				</div>
+				<div class="checkbox-container">
+					<input type="checkbox" name="input-symbol" id="input-symbol" />
+					<label for="input-symbol">Symbols: !$%... </label>
+				</div>
+				<p class="generated-password"></p>
+				<div class="button-container">
+					<input type="submit" value="Generate" />
+					<input type="button" id="copy" value="Copy" />
+				</div>
+			</form>
+		</main>
+		<footer></footer>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
