@@ -33,6 +33,7 @@ form {
 	background-color: white;
 	font-size: 2rem;
 	max-width: min(90vw, 350px);
+	min-width: 350px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
@@ -46,7 +47,7 @@ label {
 input[type="submit"],
 input[type="button"] {
 	width: 100px;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	padding: 0.5rem 1rem;
 	border: 1px solid black;
 	border-radius: 0.5rem;
